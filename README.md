@@ -39,7 +39,15 @@ python ./Train_TranspMHC.py -train ../data/pmhc_train.csv  -d ../data/pmhc_test.
 ```-train```: default = '../data/pmhc_train.csv', help = 'The filename of the .csv file contains training pMHC-I pairs'
 
 ```-d```: default = '../data/pmhc_test.csv', help = 'The filename of the .csv file contains testing pMHC-I pairs'
+```
+cd ./TranspMHC-TransTCR/code
+python ./Train_TransTCR.py  -pos ../data/pmhc_tcr_train_pos.csv -neg ../data/pmhc_tcr_train_neg.csv -d ../data/pmhc_tcr_test.csv
+```
+```-pos```: default='../data/pmhc_tcr_train_pos.csv', help = 'The filename of the .csv file contains binding TCR-pMHC-I pairs for training'
 
+```-neg```: default='../data/pmhc_tcr_train_neg.csv', help = 'The filename of the .csv file contains non-binding TCR-pMHC-I pairs for training'
+
+```-d```: default = '../data/pmhc_tcr_test.csv',  help = 'The filename of the .csv file contains testing TCR-pMHC-I pairs'
 
 # Input file example
 
