@@ -33,14 +33,12 @@ By replacing the training datasets, users can also train TranspMHC and TransTCR 
 Here, we illustrate how to use these scripts to train new models for pMHC-I and TCR-pMHC-I binding predictions.
 
 ```
-cd ./TranspMHC-TransTCR/code
 python ./Train_TranspMHC.py -train ../data/pmhc_train.csv  -d ../data/pmhc_test.csv
 ```
 ```-train```: default = '../data/pmhc_train.csv', help = 'The filename of the .csv file contains training pMHC-I pairs'
 
 ```-d```: default = '../data/pmhc_test.csv', help = 'The filename of the .csv file contains testing pMHC-I pairs'
 ```
-cd ./TranspMHC-TransTCR/code
 python ./Train_TransTCR.py  -pos ../data/pmhc_tcr_train_pos.csv -neg ../data/pmhc_tcr_train_neg.csv -d ../data/pmhc_tcr_test.csv
 ```
 ```-pos```: default='../data/pmhc_tcr_train_pos.csv', help = 'The filename of the .csv file contains binding TCR-pMHC-I pairs for training'
