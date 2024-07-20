@@ -38,7 +38,6 @@ python ./Train_TranspMHC.py -train ../data/pmhc_train.csv  -d ../data/pmhc_test.
 ```
 ```-train```: default = '../data/pmhc_train.csv', help = 'The filename of the .csv file contains training pMHC-I pairs'
 
-
 ```-d```: default = '../data/pmhc_test.csv', help = 'The filename of the .csv file contains testing pMHC-I pairs'
 
 
