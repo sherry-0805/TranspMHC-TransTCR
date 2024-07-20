@@ -1,10 +1,10 @@
 # TranspMHC-TransTCR
 
-This is the source code of "GLIMS: A two-stage gradual learning method for cancer genes prediction using multi-omics data and co-splicing network". This project presents a comprehensive approach for cancer gene prediction by integrating multiple omics data types and protein-protein interaction (PPI) networks. GLIMS adopts a two-stage progressive learning strategy: (1) a hierarchical graph neural network framework known as HIM-GCN is employed in a semi-supervised manner to predict candidate cancer genes by integrating multi-omics data and PPI networks; (2) the initial predictions are further refined by incorporating co-splicing network information using an unsupervised approach, which serves to prioritize the identified cancer genes.
+This source code is from “Attention-aware differential learning for predicting peptide-MHC class I binding and T cell receptor recognition.” The project offers a comprehensive approach for neoantigen presentation by MHC-I and recognition by TCR. The proposed framework consists of two models: (1) TranspMHC, a transformer-based model for pMHC-I binding prediction, and (2) TransTCR, a transformer-based model using differential learning to predict TCR-pMHC-I recognition.
+
 
 # Dependencies
-python(version=3.7.9) 
-
+python(version=3.7.9); torch(version=2.0.0); numpy(version=1.23.4); pandas(version=1.5.0); scikit-learn(version=1.1.2); tqdm(version=4.66.1)  
 
 
 # Guided Tutorial
@@ -39,7 +39,3 @@ python ./Train_TransTCR.py  -pos ../data/pmhc_tcr_train_pos.csv -neg ../data/pmh
 
 ```-d```: default = '../data/pmhc_tcr_test.csv',  help = 'The filename of the .csv file contains testing TCR-pMHC-I pairs'
 
-# Input file example
-
-
-# Output file example
